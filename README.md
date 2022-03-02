@@ -31,7 +31,7 @@ PilotFish’s eiDashboard UI delivers multi-dimensional operational insight for 
 
 3. Log in to the [Customer Portal](https://customerportal.pilotfishtechnology.com/portal/login.html) and download your latest license file.
 
-4. Copy in your license file (`pflicense.key`) with your latest routes (`eip-root`).
+4. Copy in your license file (`pflicense.key`).
 
 5. Build the container
 
