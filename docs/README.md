@@ -11,7 +11,7 @@ docker run -it -d --name postgres \
   -v $(pwd)/db-data:/var/lib/postgresql/data \
   --env-file ./.env \
   --network=eidashboard-network \
-  pilotfishtechnology/postgres:22R1
+  pilotfishtechnology/postgres:latest
 
 docker run -it -d --name eidashboard \
   -v $(pwd)/logs:/opt/pilotfish/logs \
@@ -46,17 +46,17 @@ docker rm eidashboard
 docker rm postgres
 
 docker rmi pilotfishtechnology/eidashboard
-docker rmi pilotfishtechnology/postgres:22R1
+docker rmi pilotfishtechnology/postgres:latest
 docker rmi my-custom-eidashboard-app
 
-docker pull pilotfishtechnology/eidashboard:22R1
-docker pull pilotfishtechnology/postgres:22R1
+docker pull pilotfishtechnology/eidashboard:latest
+docker pull pilotfishtechnology/postgres:latest
 
 docker run -it -d --name postgres \
   -v $(pwd)/db-data:/var/lib/postgresql/data \
   --env-file ./.env \
   --network=eidashboard-network \
-  pilotfishtechnology/postgres:22R1
+  pilotfishtechnology/postgres:latest
 
 docker run -it -d --name eidashboard \
   -v $(pwd)/logs:/opt/pilotfish/logs \
